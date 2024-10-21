@@ -14,6 +14,10 @@
         alert(typeof(num2));
 
         var operacion= prompt("¿Que operacion deseas realizar? suma/resta/multiplicación/división");
+        var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", 
+        "octubre", "noviembre", "diciembre"];
+
+        var contador = 0;
         
         if(operacion=="suma"){
             alert(parseInt(num1)+parseInt(num2));
@@ -23,6 +27,11 @@
             alert(parseInt(num1)*parseInt(num2));
         }else if (operacion=="division" || operacion=="división"){
             alert(parseInt(num1)/parseInt(num2));
+        }
+
+        while (contador<meses.length) {
+            document.write(meses[contador]+" ");
+            contador++;
         }
 
 
