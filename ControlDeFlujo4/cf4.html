@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <script>
+
+        var numRandom = Math.round(Math.random()*100);
+        var numIngresadoCliente = 0;
+        var intentos = 0;
+
+        alert("--- BIENVENIDO AL JUGADO DE ACERTAR EL NUMERO ALEATORIO ---");
+
+        do {
+            numIngresadoCliente = prompt("ingrese un numero: ");
+
+            if (numRandom > numIngresadoCliente) {
+                alert("El numero secreto es mayor");
+            }else if (numRandom <numIngresadoCliente) {
+                alert("El numero secreto es menor");
+            } else {
+                alert("FELICITACIONES, GANASTE!!!!");
+            }
+
+            intentos++;
+        } while (numIngresadoCliente != numRandom);
+
+    </script>
+
+</head>
+<body>
+    
+
+
+
+</body>
+</html>
